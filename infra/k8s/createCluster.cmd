@@ -1,0 +1,1 @@
+eksctl create cluster --version 1.17 --name property-eks-cluster --region us-west-2 --nodegroup-name eks-ec2-linux-nodes --node-type t3.small --nodes 2 --nodes-min 1 --nodes-max 3 --ssh-access --ssh-public-key ~/.ssh/id_rsa.pub --managed --auto-kubeconfig --verbose 3

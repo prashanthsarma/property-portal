@@ -1,0 +1,11 @@
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/aws/deploy.yaml
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=ramproper.com /O=ramproper.com"
+kubectl create secret tls tls-secret --key ramproper.com.key --cert ramproper.com.cert
+
+
+
+kubectl apply -f auth-mongo-depl
+
+kubectl create secret tls tls-secret --key ramproper.com.key --cert ramproper.com.cert
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=ram
