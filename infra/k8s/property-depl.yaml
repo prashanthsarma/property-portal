@@ -33,4 +33,4 @@ spec:
     - name: property
       protocol: TCP
       port: 5000
-      targetPort: 4001
+      targetPort: 5000
