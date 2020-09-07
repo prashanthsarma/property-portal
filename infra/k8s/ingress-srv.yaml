@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
     nginx.ingress.kubernetes.io/use-regex: 'true'
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, DELETE, OPTIONS"
     # nginx.ingress.kubernetes.io/cors-allow-origin: "a7ed5a6cd31d94ebf86b32aae283b942-69471a12aa9be2af.elb.us-west-2.amazonaws.com"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
 spec:
@@ -19,6 +19,10 @@ spec:
           - path: /api/users/?(.*)
             backend:
               serviceName: auth-srv
+              servicePort: 5000
+          - path: /api/property/?(.*)
+            backend:
+              serviceName: property-srv
               servicePort: 5000
           - path: /?(.*)
             backend:
