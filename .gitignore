@@ -1,2 +1,3 @@
 property/.env
+auth/.env
 client/debug.log
