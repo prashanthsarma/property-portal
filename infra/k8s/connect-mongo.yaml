@@ -1,3 +1,6 @@
+# User this incase to open a direct connection to the mongodb within kubernetes cluster
+# the load balance should give an external internet facing url to connect to
+# only for testing prod db directly, dont leave it open as our dbs dont have authentication yet.
 apiVersion: v1
 kind: Service
 metadata:  

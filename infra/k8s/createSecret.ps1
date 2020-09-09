@@ -6,3 +6,6 @@
 
 # kubectl create secret generic jwt-secret --from-literal=JWT_KEY=xxx
 # kubectl create secret generic aws-secret --from-literal=AWS_SECRET=xxx
+
+# To view the secret later...(decode the secret from base64)
+# kubectl get secret jwt-secret -o yaml
