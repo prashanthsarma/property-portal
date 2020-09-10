@@ -9,9 +9,9 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, DELETE, OPTIONS"
-    # nginx.ingress.kubernetes.io/cors-allow-origin: "a7ed5a6cd31d94ebf86b32aae283b942-69471a12aa9be2af.elb.us-west-2.amazonaws.com"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "a7ed5a6cd31d94ebf86b32aae283b942-69471a12aa9be2af.elb.us-west-2.amazonaws.com"
     # Uncomment when pointing DEV UI to PROD Server
-    nginx.ingress.kubernetes.io/cors-allow-origin: "http://app.test.com:3000"
+    # nginx.ingress.kubernetes.io/cors-allow-origin: "http://app.test.com:3000"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
     nginx.ingress.kubernetes.io/proxy-body-size: 50m
 spec:
