@@ -1,8 +1,8 @@
-UI URL:
-https://a7ed5a6cd31d94ebf86b32aae283b942-69471a12aa9be2af.elb.us-west-2.amazonaws.com/
-
-API Documentation:
-https://documenter.getpostman.com/view/2730865/TVK5c1FJ
+UI URL: https://a7ed5a6cd31d94ebf86b32aae283b942-69471a12aa9be2af.elb.us-west-2.amazonaws.com/
+API Documentation: https://documenter.getpostman.com/view/2730865/TVK5c1FJ
+Component Diagram: https://drive.google.com/file/d/1nzmagm0Yw23UQddiF9PTD6zCSzYtkhiW/view?usp=sharing
+Deployment Diagram: https://drive.google.com/file/d/13Im2vX2LDQ2nqvguzz_2hE2M-RC0GeZC/view?usp=sharing
+Codebase: https://github.com/prashanthsarma/property-portal
 
 Client functionalities
 
